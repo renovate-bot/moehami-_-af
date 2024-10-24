@@ -1,0 +1,40 @@
+            - name: Install cargo-prebuilt
+  # You may pin to the exact commit or the version.
+  # uses: cargo-prebuilt/cargo-prebuilt-action@40cc4521b75fcd20674cb3aa2314b10a690e9d91
+  uses: cargo-prebuilt/cargo-prebuilt-action@v3.4.2
+  with:
+    # Version of cargo-prebuilt to use
+    prebuilt-version: # default is latest
+    # Target for the version of cargo-prebuilt to install
+    prebuilt-target: # default is current
+    # Verify downloaded cargo prebuilt
+    prebuilt-verify: # default is sha256
+    # A CSV list of prebuilt crates needed with optional version numbers (see cargo-prebuilt cli)
+    pkgs: # optional, default is 
+    # Target for the version of the tools to install
+    target: # optional, default is 
+    # Index to use from the config file. Requires ci to be set to false if using
+    index-key: # optional, default is 
+    # Index to use to install tools from
+    index: # optional, default is 
+    # Auth token for index if needed
+    auth: # optional, default is 
+    # Path to config file to use. Requires ci to be set to false if using
+    config: # optional, default is 
+    # Path where prebuilt crates are installed
+    path: # optional, default is 
+    # Path where reports are installed
+    report-path: # optional, default is 
+    # Use the --ci flag (On by default)
+    ci: # optional, default is true
+    # A public verifying key encoded as base64
+    sig: # optional, default is 
+    # Do not verify downloaded files
+    no-verify: # optional, default is 
+    # Do not overwrite existing files
+    safe: # optional, default is 
+    # Print out events (On by default)
+    out: # optional, default is true
+    # Enable or disable color
+    color: # optional, default is 
+          
